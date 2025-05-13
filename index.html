@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Basics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Web Development Basics</h1>
+    <nav>
+      <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="html">
+      <h2>HTML</h2>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page and consists of elements that tell the browser how to display the content.</p>
+      <div class="example-code">
+        <h3>Example:</h3>
+        <pre><code>
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;button&gt;This is a button&lt;/button&gt;
+        </code></pre>
+      </div>
+    </section>
+
+    <section id="css">
+      <h2>CSS</h2>
+      <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+      <div class="example-code">
+        <h3>Example:</h3>
+        <pre><code>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+.example-code {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+        </code></pre>
+      </div>
+    </section>
+
+    <section id="javascript">
+      <h2>JavaScript</h2>
+      <p>JavaScript is a programming language that enables interactive web pages. It's essential for creating dynamic content like slideshows, form validation, interactive maps, and much more.</p>
+      <div class="example-code">
+        <h3>Example:</h3>
+        <pre><code>
+// Change text when button is clicked
+document.querySelector('button').addEventListener('click', function() {
+  document.querySelector('h1').textContent = 'Text changed!';
+  this.textContent = 'Clicked!';
+});
+
+// Simple counter
+let count = 0;
+function incrementCounter() {
+  count++;
+  document.getElementById('counter').textContent = count;
+}
+        </code></pre>
+      </div>
+      <div class="interactive">
+        <p>Counter: <span id="counter">0</span></p>
+        <button id="counter-button">Increment</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created to demonstrate HTML, CSS, and JavaScript basics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
