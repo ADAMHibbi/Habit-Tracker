@@ -1,5 +1,5 @@
 # 🌐 Web Development Basics
-
+the websit : "https://adamhibbi.github.io/Web-Development-Basics/"
 A beginner-friendly website that introduces the fundamentals of **HTML**, **CSS**, and **JavaScript**.  
 Perfect for those who are starting their journey into web development.
 
@@ -43,3 +43,4 @@ Perfect for those who are starting their journey into web development.
 1. Download or clone the repository:
    ```bash
    git clone https://github.com/ADAMHibbi/Habit-Tracker.git
+   
